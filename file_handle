@@ -5,7 +5,7 @@
 using namespace std;
 
 void writeToFile(const string& filename) {
-    ofstream outfile(filename);  // overwrite mode
+    ofstream outfile(filename); 
     if (!outfile) {
         cerr << "Error opening file for writing.\n";
         return;
@@ -71,7 +71,7 @@ int main() {
         cout << "4. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
-        cin.ignore();  // to ignore leftover newline
+        cin.ignore();
 
         switch (choice) {
             case 1:
